@@ -76,7 +76,7 @@
     },
     {
         "name": "locale",
-        "value": "en_GBGB
+        "value": "en_GB",
         "domain": ".facebook.com",
         "hostOnly": false,
         "path": "/",
