@@ -2,7 +2,7 @@ module.exports = {
   config: {
     name: "info",
     version: "1.5",
-    author: "✨ Tarek ✨",
+    author: "✨ Ashik ✨",
     shortDescription: "Display bot and owner info",
     longDescription: "Shows owner's and bot's details with videos.",
     category: "INFO",
@@ -20,12 +20,12 @@ module.exports = {
            𝗢𝗪𝗡𝗘𝗥 𝗜𝗡𝗙𝗢
 └────────────────┘
 
-  ☁️ 𝗡𝗮𝗺𝗲 ➝ 𝗔𝗬𝗔𝗡
+  ☁️ 𝗡𝗮𝗺𝗲 ➝ ASHIK
   🎂 𝗔𝗴𝗲 ➝ 18💋🥵
-  🧠 𝗘𝗱𝘂𝗰𝗮𝘁𝗶𝗼𝗻 ➝ 𝗗𝗶𝗽𝗹𝗼𝗺𝗮 𝗶𝗻 𝗖𝗶𝘃𝗶𝗹 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴                  
+  🧠 𝗘𝗱𝘂𝗰𝗮𝘁𝗶𝗼𝗻 ➝ বেকার                  
   ❄️ 𝘀𝗲𝘀𝘀𝗶𝗼𝗻 ➝ 2025-26
-  🏠 𝗙𝗿𝗼𝗺 ➝ 𝗚𝗔𝗭𝗜𝗣𝗨𝗥 😎⚡
-  ❤️ 𝗥𝗲𝗹𝗮𝘁𝗶𝗼𝗻 ➝ 🎀𝐌𝐀𝐑𝐑𝐈𝐄𝐃🎀
+  🏠 𝗙𝗿𝗼𝗺 ➝ Dhaka 😎⚡
+  ❤️ 𝗥𝗲𝗹𝗮𝘁𝗶𝗼𝗻 ➝ 🎀SINGLE🎀
   ♂️ 𝗚𝗲𝗻𝗱𝗲𝗿 ➝ 𝐌𝐚𝐥𝐞
 
 ━━━━━━━━━━━━━━━━━━
@@ -34,7 +34,7 @@ module.exports = {
 
 ━━━━━━━━━━━━━━━━━━
 
-✨ 𝗕𝗼𝘁 𝗧𝘆𝗽𝗲 ➝ 𝗚𝗼𝗮𝘁𝗕𝗼𝘁 𝗩𝟮
+✨ 𝗕𝗼𝘁 𝗧𝘆𝗽𝗲 ➝ AshikBot 𝗩𝟮
 
 💫 𝗧𝗵𝗮𝗻𝗸𝘀 𝗳𝗼𝗿 𝘂𝘀𝗶𝗻𝗴 𝗺𝗲 💫
     `;
