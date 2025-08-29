@@ -1,104 +1,49 @@
-const axios = require('axios');
-const moment = require('moment-timezone');
-const fs = require('fs');
-const request = require('request');
-
 module.exports = {
-    config: {
-        name: "info",
-        version: "1.3",
-        author: "𝐀𝐌𝐈𝐍𝐔𝐋-𝐒𝐎𝐑𝐃𝐀𝐑",
-        countDown: 20,
-        role: 0,
-        shortDescription: {
-            vi: "🌟 Thông tin Bot & Chủ Sở Hữu 🌟",
-            en: "🌟 Bot & Owner Information 🌟"
-        },
-        longDescription: {
-            vi: "✨ Hiển thị thông tin chi tiết về Bot và Chủ Sở Hữu. ✨",
-            en: "✨ Displays detailed information about the Bot and its Owner. ✨"
-        },
-        category: "owner",
-        guide: {
-            en: "Type 'info' to unveil the Bot's secrets! 🕵️‍♂️"
-        },
-        envConfig: {}
-    },
+  config: {
+    name: "info",
+    version: "1.5",
+    author: "✨ Tarek ✨",
+    shortDescription: "Display bot and owner info",
+    longDescription: "Shows owner's and bot's details with videos.",
+    category: "INFO",
+    guide: { en: "[user]" },
+  },
 
-    onStart: async function ({ message }) {
-        try {
-            const botName = "─꯭─⃝͎̽𓆩𝐀𝐍𝐔‣᭄𓆪___//😘😇😈";
-            const botPrefix = "/";
-            const authorName = "『😽👉𝐀𝐘𝐀𝐍👈😽』";
-            const teamName = "🚀 𝐍𝐎 𝐑𝐈𝐒𝐊 🚀";
-            const authorFB = "https://www.facebook.com/profile.php?id=100092707489189";
-            const address = "𝐆𝐀𝐙𝐈𝐏𝐔𝐑, 𝐁𝐀𝐍𝐆𝐋𝐀𝐃𝐄𝐒𝐇";
-            const religion = "𝐈𝐒𝐋𝐀𝐌";
-            const gender = "𝐌𝐀𝐋𝐄";
-            const relation = "𝐌𝐀𝐑𝐑𝐈𝐄𝐃";
-            const work = "𝐂𝐈𝐕𝐈𝐋 𝐃𝐄𝐕𝐎𝐋𝐎𝐏𝐌𝐄𝐍𝐓 𝐈𝐍𝐆 𝐎𝐅 𝐈𝐍𝐃";
-            const whatsapp = "+8801909781627";
+  onStart: async function ({ api, event }) {
+    const videoUrls = [
+      // ✅ Fixed: Converted to direct-download format
+      "https://drive.google.com/uc?export=download&id=1T76MSnPSi4oIK4UFP9Uhy3QW53K6jAw1"
+    ];
 
-            const now = moment().tz('Asia/Dhaka');
-            const date = now.format('DD/MM/YYYY');
-            const time = now.format('HH:mm:ss');
+    const msgBody = `
+┌────────────────┐
+           𝗢𝗪𝗡𝗘𝗥 𝗜𝗡𝗙𝗢
+└────────────────┘
 
-            const uptime = process.uptime();
-            const format = n => String(Math.floor(n)).padStart(2, '0');
-            const seconds = format(uptime % 60);
-            const minutes = format((uptime / 60) % 60);
-            const hours = format((uptime / 3600) % 24);
-            const days = format(uptime / 86400);
-            const uptimeString = `${days}:${hours}:${minutes}`;
+  ☁️ 𝗡𝗮𝗺𝗲 ➝ 𝗔𝗬𝗔𝗡
+  🎂 𝗔𝗴𝗲 ➝ 18💋🥵
+  🧠 𝗘𝗱𝘂𝗰𝗮𝘁𝗶𝗼𝗻 ➝ 𝗗𝗶𝗽𝗹𝗼𝗺𝗮 𝗶𝗻 𝗖𝗶𝘃𝗶𝗹 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴                  
+  ❄️ 𝘀𝗲𝘀𝘀𝗶𝗼𝗻 ➝ 2025-26
+  🏠 𝗙𝗿𝗼𝗺 ➝ 𝗚𝗔𝗭𝗜𝗣𝗨𝗥 😎⚡
+  ❤️ 𝗥𝗲𝗹𝗮𝘁𝗶𝗼𝗻 ➝ 🎀𝐌𝐀𝐑𝐑𝐈𝐄𝐃🎀
+  ♂️ 𝗚𝗲𝗻𝗱𝗲𝗿 ➝ 𝐌𝐚𝐥𝐞
 
-            const infoMessage = `
-╔═══════✿𝐁𝐎𝐓 𝐈𝐍𝐅𝐎✿══════╗
-        💐আ্ঁস্ঁসা্ঁলা্ঁমু্ঁ💚আ্ঁলা্ঁই্ঁকু্ঁম্ঁ💐
-╚══════════════════════╝
+━━━━━━━━━━━━━━━━━━
 
-➤ 𝗕𝗢𝗧 𝗔𝗗𝗠𝗜𝗡 : ${authorName}
-➤ 𝗔𝗗𝗗𝗥𝗘𝗦𝗦 : ${address}
-➤ 𝗥𝗘𝗟𝗜𝗚𝗜𝗢𝗡 : ${religion}
-➤ 𝗚𝗘𝗡𝗗𝗘𝗥 : ${gender}
-➤ 𝗥𝗘𝗟𝗔𝗧𝗜𝗢𝗡𝗦𝗛𝗜𝗣 : ${relation}
-➤ 𝗪𝗢𝗥𝗞 : ${work}
-➤ 𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣 : ${whatsapp}
-➤ 𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞 : ${authorFB}
+ ✦ 𝗛𝗼𝗯𝗯𝗶𝗲𝘀 ➝ ɢᴀᴍɪɴɢ • ᴍᴜsɪᴄ
 
-╔═══════✿𝐒𝐘𝐒𝐓𝐄𝐌✿════════╗
-➤ 𝗕𝗢𝗧 𝗡𝗔𝗠𝗘 : ${botName}
-➤ 𝗣𝗥𝗘𝗙𝗜𝗫 : ${botPrefix}
-➤ 𝗗𝗔𝗧𝗘 : ${date}
-➤ 𝗧𝗜𝗠𝗘 : ${time}
-➤ 𝗨𝗣𝗧𝗜𝗠𝗘 : ${uptimeString}
-➤ 𝗧𝗘𝗔𝗠 : ${teamName}
-╚═══════════════════════╝
+━━━━━━━━━━━━━━━━━━
 
-🫶 𝗧𝗛𝗔𝗡𝗞𝗦 𝗙𝗢𝗥 𝗨𝗦𝗜𝗡𝗚 ${botName}
-`;
+✨ 𝗕𝗼𝘁 𝗧𝘆𝗽𝗲 ➝ 𝗚𝗼𝗮𝘁𝗕𝗼𝘁 𝗩𝟮
 
-            const imagePath = __dirname + "/cache/1.png";
-            const callback = () => {
-                const msg = {
-                    body: infoMessage,
-                    attachment: fs.createReadStream(imagePath)
-                };
-                message.reply(msg, () => fs.unlinkSync(imagePath));
-            };
+💫 𝗧𝗵𝗮𝗻𝗸𝘀 𝗳𝗼𝗿 𝘂𝘀𝗶𝗻𝗴 𝗺𝗲 💫
+    `;
 
-            request(encodeURI(`https://graph.facebook.com/100071880593545/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`))
-                .pipe(fs.createWriteStream(imagePath))
-                .on("close", callback);
+    const randomVideo = videoUrls[Math.floor(Math.random() * videoUrls.length)];
 
-        } catch (error) {
-            console.error("💥 info কমান্ডে ত্রুটি:", error);
-            message.reply("⚠️ দুঃখিত, কিছু একটা সমস্যা হয়েছে info কমান্ডে!");
-        }
-    },
-
-    onChat: async function ({ event, message, args, api }) {
-        if (event.body && event.body.toLowerCase() === "info") {
-            this.onStart({ event, message, args, api });
-        }
-    }
+    api.sendMessage({
+      body: msgBody,
+      attachment: await global.utils.getStreamFromURL(randomVideo),
+    }, event.threadID, event.messageID);
+  },
 };
