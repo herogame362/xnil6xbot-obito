@@ -8,7 +8,7 @@ module.exports = {
 	config: {
 		name: 'autoinsta',
 		version: '1.0',
-		author: 'Kshitiz',
+		author: 'Ashik',
 		countDown: 5,
 		role: 0,
 		shortDescription: 'auto video downloader',
