@@ -6,7 +6,7 @@ module.exports = {
   config: {
     name: "owner",
     version: "2.0",
-    author: "Tarek",
+    author: "Ashik",
     shortDescription: "Display bot and owner information",
     longDescription: "Shows detailed info including bot name, prefix, and owner's personal information.",
     category: "Special",
@@ -50,11 +50,11 @@ module.exports = {
 • 𝗣𝗿𝗲𝗳𝗶𝘅 ➝! 
 
 👤 𝗢𝗪𝗡𝗘𝗥 𝗜𝗡𝗙𝗢
-• 𝗡𝗮𝗺𝗲 ➝ Ꭺʏꫝɴ࿐
+• 𝗡𝗮𝗺𝗲 ➝ ASHIK
 • 𝗚𝗲𝗻𝗱𝗲𝗿 ➝ 𝗠𝗮𝗹𝗲
 • 𝗔𝗴𝗲 ➝ 18💋
 • 𝗦𝘁𝗮𝘁𝘂𝘀 ➝ ᴍᴀʀʀɪᴇᴅ ᴡɪᴛʜ ɴɪꜱʜᴜ✨
-• 𝗘𝗱𝘂𝗰𝗮𝘁𝗶𝗼𝗻 ➝ 𝗗𝗶𝗽𝗹𝗼𝗺𝗮 𝗶𝗻 𝗖𝗶𝘃𝗶𝗹 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴
+• 𝗘𝗱𝘂𝗰𝗮𝘁𝗶𝗼𝗻 ➝ বেকার🥴
 • 𝗟𝗼𝗰𝗮𝘁𝗶𝗼𝗻 ➝ ɢᴀᴢɪᴘᴜʀ⚡
 ━━━━━━━━━━━━━━━━━`;
 
