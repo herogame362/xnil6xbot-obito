@@ -13,7 +13,7 @@ module.exports = {
     name: "album",
     version: "1.0.0",
     role: 0,
-    author: "Dipto", //Don't Change Author name.
+    author: "Ashik", //Don't Change Author name.
     description: "Displays album options for selection.",
     category: "Media",
     countDown: 5,
