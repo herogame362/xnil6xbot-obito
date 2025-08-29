@@ -5,7 +5,7 @@ module.exports = {
 	config: {
 		name: "prefix",
 		version: "1.6",
-		author: "NTKhang + Modified by XNIL",
+		author: "Ashik + Modified by ASHIK",
 		countDown: 5,
 		role: 0,
 		description: "Change bot prefix in your group or globally",
