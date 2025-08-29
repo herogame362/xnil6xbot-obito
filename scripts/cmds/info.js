@@ -2,7 +2,7 @@ module.exports = {
   config: {
     name: "info",
     version: "1.5",
-    author: "✨ Ashik ✨",
+    author: "🔥 Ashik 💧",
     shortDescription: "Display bot and owner info",
     longDescription: "Shows owner's and bot's details with videos.",
     category: "INFO",
@@ -21,11 +21,11 @@ module.exports = {
 └────────────────┘
 
   ☁️ 𝗡𝗮𝗺𝗲 ➝ ASHIK
-  🎂 𝗔𝗴𝗲 ➝ 18+💋🥵
+  🎂 𝗔𝗴𝗲 ➝ 18+🙂🌹
   🧠 𝗘𝗱𝘂𝗰𝗮𝘁𝗶𝗼𝗻 ➝ বেকার                  
   ❄️ 𝘀𝗲𝘀𝘀𝗶𝗼𝗻 ➝ 2025-26
-  🏠 𝗙𝗿𝗼𝗺 ➝ Dhaka 😎⚡
-  ❤️ 𝗥𝗲𝗹𝗮𝘁𝗶𝗼𝗻 ➝ 🎀SINGLE🎀
+  🏠 𝗙𝗿𝗼𝗺 ➝ Dhaka 🫠🗺️
+  ❤️ 𝗥𝗲𝗹𝗮𝘁𝗶𝗼𝗻 ➝ 🎉SINGLE🎉
   ♂️ 𝗚𝗲𝗻𝗱𝗲𝗿 ➝ 𝐌𝐚𝐥𝐞
 
 ━━━━━━━━━━━━━━━━━━
