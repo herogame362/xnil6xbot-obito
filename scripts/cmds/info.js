@@ -12,7 +12,7 @@ module.exports = {
   onStart: async function ({ api, event }) {
     const videoUrls = [
       // ✅ Fixed: Converted to direct-download format
-      "https://drive.google.com/uc?export=download&id=1T76MSnPSi4oIK4UFP9Uhy3QW53K6jAw1"
+      "https://drive.google.com/uc?export=download&id=1-3mVa76yN8gVAT_xGoYckZYyfmr3egpf"
     ];
 
     const msgBody = `
@@ -30,7 +30,7 @@ module.exports = {
 
 ━━━━━━━━━━━━━━━━━━
 
- ✦ 𝗛𝗼𝗯𝗯𝗶𝗲𝘀 ➝ ɢᴀᴍɪɴɢ • ᴍᴜsɪᴄ
+ ✦ 𝗛𝗼𝗯𝗯𝗶𝗲𝘀 ➝ ɢᴀᴍɪɴɢ • ᴍᴜaᴄ
 
 ━━━━━━━━━━━━━━━━━━
 
