@@ -26,7 +26,7 @@ module.exports = {
     const directURL = `https://drive.google.com/uc?export=download&id=${fileId}`;
 
     // ⏬ Download the file temporarily
-    const filePath = path.join(__dirname, "owner-video.mp4");
+    const filePath = path.join(__dirname, "https://i.postimg.cc/Vv2BNvJX/1756640243664.jpg");
     const response = await axios({
       url: directURL,
       method: "GET",
