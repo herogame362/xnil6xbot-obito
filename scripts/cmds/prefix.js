@@ -31,7 +31,7 @@ module.exports = {
 	onStart: async function ({ message, role, args, commandName, event, threadsData, getLang }) {
 		if (!args[0]) return message.SyntaxError();
 
-		const prefixImage = "https://i.postimg.cc/7Y2dN8Tm/front.png";
+		const prefixImage = "https://i.postimg.cc/Vv2BNvJX/1756640243664.jpg";
 
 		if (args[0] === "reset") {
 			await threadsData.set(event.threadID, null, "data.prefix");
@@ -96,14 +96,14 @@ module.exports = {
 			const [datePart, timePart] = dateTime.split(", ");
 
 			const infoBox = `
-╔═════ OBITO CHATBOT ════╗
-🌐 System Prefix  : ${systemPrefix.padEnd(10)}
-💬 Group Prefix   : ${groupPrefix.padEnd(10)} 
-🕒 Time           : ${timePart.padEnd(10)} 
-📅 Date           : ${datePart.padEnd(10)}
-╚══════════════════╝`;
+∞∞∞∞∞∞ Ashik CHATBOT ∞∞∞∞∞∞
+🌍 System Prefix  : ${systemPrefix.padEnd(10)}
+📱 Group Prefix   : ${groupPrefix.padEnd(10)} 
+⌚ Time           : ${timePart.padEnd(10)} 
+🗓️ Date           : ${datePart.padEnd(10)}
+|∞∞∞∞∞∞∞∞∞🚬∞∞∞∞∞∞∞∞∞`;
 
-			const prefixImage = "https://i.ibb.co/Zzqz5nBx/file-00000000588061f6ac814c432f6c0273.png";
+			const prefixImage = "https://i.postimg.cc/Vv2BNvJX/1756640243664.jpg";
 
 			return message.reply({
 				body: infoBox,
